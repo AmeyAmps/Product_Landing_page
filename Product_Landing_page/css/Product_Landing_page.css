@@ -1,0 +1,494 @@
+body{
+   background-image:radial-gradient(#F0E68C,#F5F5DC,#F0E68C);
+  background-attachment:fixed;
+  background-repeat:no-repeat;
+}
+
+.font-Chonburi{
+  font-family: 'Chonburi', cursive;
+}
+
+.font-type{
+  font-variant:small-caps;
+}
+
+.center-text{
+  text-align:center;
+}
+
+.border-styling{
+  border:3px solid #FFFFFF;
+  border-radius: 3%;
+}
+
+.flex-container{
+  display:flex;
+}
+
+.animations:hover, .animations:focus{
+  transition: 0.5s 0.1s background-color ease-out;
+}
+
+.image-animations:hover, .image-animations:focus{
+   transition: 0.5s 0.1s transform ease-out,0.5s 0.1s box-shadow ease-out;
+  box-shadow: 0px 5px 5px 5px #696969;
+  transform:scale(1.1,1.1);
+}
+
+#header{
+  position:fixed;
+}
+
+#nav-bar> ul{
+  top:0;
+  right:0;
+  position:fixed;
+  font-size: 0.75em;
+  align-items:center;
+  justify-content:space-between;
+}
+
+li{
+  list-style:none;
+  width:100%;
+  padding:1%;
+}
+
+a{
+  text-decoration:none;
+  color:#A2593F;
+}
+
+.nav-link:hover, .nav-link:focus{
+  background-color:#A2593F;
+  color:#F0E68C;
+}
+
+#header-img{
+  width:100%;
+  height:auto;
+  margin:5%;
+}
+
+#form{
+  width:25%;
+  padding: 1%;
+  transform: translate(0%,15%);
+  margin: 0 auto;
+  background: linear-gradient(#F5F5DC,#D2691E);
+  
+}
+
+#name, #email, #submit{
+  width: 95%;
+  height: 2em;
+  
+}
+
+#submit, #submit:active{
+  background-color:#FFD700;
+}
+
+#submit:hover, #submit:focus{
+  background-color:#D2691E;
+  color:#FFD700;
+}
+
+#name-field, #email-field, #submit-field{
+  padding:3%;
+}
+
+#submit-field{
+  width:65%;
+  margin:0 auto;
+}
+
+#video{
+  max-width:700px;
+  width:80%;
+  height:400px;
+  position:relative;
+  top:25%;
+  left:50%;
+  margin:0 auto;
+  transform: translate(-50%,20%);
+}
+
+#treatz-we-offer{
+  width:50%;
+  margin:0 auto;
+  justify-content:center;
+  flex-wrap:wrap;
+  transform:translate(0%,15%);
+}
+
+.treatz{
+  flex-basis:33.3333333%;
+  margin:2%;
+}
+
+.treatz > img{
+  width:100%;
+  border-radius:3%;
+}
+
+.treatz > p{
+  color:#A2593F;
+  padding:2%;
+}
+
+#about-us, #contact-us, #our-location{
+  margin:0 auto;
+  position:relative;
+  width:50%;
+  color:#A2593F;
+  transform: translate(0,20em);
+  padding:2%;
+}
+
+#our-desc{
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.owner-container{
+  justify-content:space-around;
+}
+
+.owners{
+  border:6px solid #A2593F;
+}
+
+#instagram{
+  width:10%;
+  height:20%; 
+  border-radius:20%;
+}
+
+#youtube{
+  width:15%;
+  height:10%;
+  border-radius:24%;
+}
+
+#map{
+  width: 27em;
+  height: 17em;
+  margin: 0 auto;
+}
+
+@media (max-width:768px){
+  #header{
+  
+  z-index:1;
+}
+
+#nav-bar> ul{
+  background-color:#A2593F;
+  border-radius:3%;
+  color:#F0E68C;
+}
+  
+  #nav-bar> ul> li> a{
+    color:#F0E68C;
+  }
+
+
+
+#header-img{
+  width:3em;
+  z-index:1;
+}
+
+#form{
+  width:80%;
+  padding: 3%;
+  transform: translate(27%,25%);
+}
+
+
+#video{
+  width:47em;
+  height:25em;
+  margin: 20% 25% 20% 24%;
+}
+
+#treatz-we-offer{
+  width:80%;
+  transform:translate(27%,1%);
+}
+
+.treatz{
+  flex-basis:50%;
+  flex-grow:1;
+  margin:2%;
+}
+
+#about-us, #contact-us, #our-location{
+  width:100%;
+  transform: translate(17%,12em);
+}
+
+#our-desc{
+  width: 100%;
+}
+
+.owner-container{
+  flex-direction:column;
+}
+
+.owners{
+  margin-top:2.5em;
+}
+
+#instagram{
+  width:15%;
+  height:25%; 
+}
+
+#youtube{
+  width:20%;
+  height:25%;
+}
+  
+  #map{
+    width:25em;
+  height:15em;
+  margin: 2%;
+  }
+}
+
+@media (max-width:420px){
+  #header{
+  z-index:1;
+}
+
+#nav-bar> ul{
+  background-color:#A2593F;
+  border-radius:3%;
+  color:#F0E68C;
+}
+  
+  #nav-bar> ul> li> a{
+    color:#F0E68C;
+  }
+
+#header-img{
+  width:3em;
+  z-index:1;
+}
+
+#form{
+  width:90%;
+  padding: 3%;
+  transform: translate(25%,25%);
+}
+
+#video{
+  width:27em;
+  height:15em;
+  margin: 20% 15% 20% 25%;
+}
+
+#treatz-we-offer{
+  width:80%;
+  transform:translate(28%,1%);
+}
+
+.treatz{
+  flex-basis:50%;
+  flex-grow:1;
+  margin:2%;
+}
+
+#about-us, #contact-us, #our-location{
+  width:100%;
+  transform: translate(19%,12em);
+}
+
+#our-desc{
+  width: 100%;
+}
+
+.owner-container{
+  flex-direction:column;
+}
+
+.owners{
+  margin-top:2.5em;
+}
+
+#instagram{
+  width:15%;
+  height:25%; 
+}
+
+#youtube{
+  width:20%;
+  height:25%;
+}
+  
+  #map{
+  width:25em;
+  height:15em;
+  margin: 2%;
+  }
+}
+
+@media (max-width:380px){
+  #header{
+  z-index:1;
+}
+
+#nav-bar> ul{
+  background-color:#A2593F;
+  border-radius:3%;
+  color:#F0E68C;
+}
+  
+  #nav-bar> ul> li> a{
+    color:#F0E68C;
+  }
+
+#header-img{
+  width:3em;
+  z-index:1;
+}
+
+#form{
+  width:90%;
+  padding: 3%;
+  transform: translate(26%,25%);
+}
+
+#video{
+  width:27em;
+  height:17em;
+  margin: 20% auto 20% 27%;
+}
+
+#treatz-we-offer{
+  width:80%;
+  transform:translate(30%,1%);
+}
+
+.treatz{
+  flex-basis:50%;
+  flex-grow:1;
+  margin:2%;
+}
+
+#about-us, #contact-us, #our-location{
+  width:100%;
+  transform: translate(20%,12em);
+}
+
+#our-desc{
+  width: 100%;
+}
+
+.owner-container{
+  flex-direction:column;
+}
+
+.owners{
+  margin-top:2.5em;
+}
+
+#instagram{
+  width:15%;
+  height:25%; 
+}
+
+#youtube{
+  width:20%;
+  height:25%;
+}
+  
+  #map{
+    width:25em;
+  height:15em;
+  transform: translateX(-9%);
+  margin: 3%;
+  }
+}
+
+@media (max-width:320px){
+  #header{
+  z-index:1;
+}
+
+#nav-bar> ul{
+  background-color:#A2593F;
+  border-radius:3%;
+  color:#F0E68C;
+}
+  
+  #nav-bar> ul> li> a{
+    color:#F0E68C;
+  }
+
+#header-img{
+  width:3em;
+  z-index:1;
+}
+
+#form{
+  width:90%;
+  padding: 3%;
+  transform: translate(31%,25%);
+}
+
+#video{
+  width:27em;
+  height:15em;
+  margin:0 auto;
+  transform: translate(-28%,60%);
+}
+
+#treatz-we-offer{
+  width:80%;
+  transform:translate(35%,5%);
+}
+
+.treatz{
+  flex-basis:50%;
+  flex-grow:1;
+  margin:2%;
+}
+
+#about-us, #contact-us, #our-location{
+  width:100%;
+  transform: translate(25%,20em);
+}
+
+#our-desc{
+  width: 100%;
+}
+
+.owner-container{
+  flex-direction:column;
+}
+
+.owners{
+  margin-top:2.5em;
+}
+
+#instagram{
+  width:15%;
+  height:25%; 
+}
+
+#youtube{
+  width:20%;
+  height:25%;
+}
+  
+  #map{
+    width:25em;
+  height:15em;
+  margin: 2%;
+  transform: translateX(-11%);
+  }
+}

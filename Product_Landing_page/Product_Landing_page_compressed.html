@@ -1,0 +1,605 @@
+ <!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width=1, initial-scale=1"/>
+    <title> Delightful Treatz </title>
+    <style type="text/css">
+      body{
+   background-image:radial-gradient(#F0E68C,#F5F5DC,#F0E68C);
+  background-attachment:fixed;
+  background-repeat:no-repeat;
+}
+
+.font-Chonburi{
+  font-family: 'Chonburi', cursive;
+}
+
+.font-type{
+  font-variant:small-caps;
+}
+
+.center-text{
+  text-align:center;
+}
+
+.border-styling{
+  border:3px solid #FFFFFF;
+  border-radius: 3%;
+}
+
+.flex-container{
+  display:flex;
+}
+
+.animations:hover, .animations:focus{
+  transition: 0.5s 0.1s background-color ease-out;
+}
+
+.image-animations:hover, .image-animations:focus{
+   transition: 0.5s 0.1s transform ease-out,0.5s 0.1s box-shadow ease-out;
+  box-shadow: 0px 5px 5px 5px #696969;
+  transform:scale(1.1,1.1);
+}
+
+#header{
+  position:fixed;
+}
+
+#nav-bar> ul{
+  top:0;
+  right:0;
+  position:fixed;
+  font-size: 0.75em;
+  align-items:center;
+  justify-content:space-between;
+}
+
+li{
+  list-style:none;
+  width:100%;
+  padding:1%;
+}
+
+a{
+  text-decoration:none;
+  color:#A2593F;
+}
+
+.nav-link:hover, .nav-link:focus{
+  background-color:#A2593F;
+  color:#F0E68C;
+}
+
+#header-img{
+  width:100%;
+  height:auto;
+  margin:5%;
+}
+
+#form{
+  width:25%;
+  padding: 1%;
+  transform: translate(0%,15%);
+  margin: 0 auto;
+  background: linear-gradient(#F5F5DC,#D2691E);
+  
+}
+
+#name, #email, #submit{
+  width: 95%;
+  height: 2em;
+  
+}
+
+#submit, #submit:active{
+  background-color:#FFD700;
+}
+
+#submit:hover, #submit:focus{
+  background-color:#D2691E;
+  color:#FFD700;
+}
+
+#name-field, #email-field, #submit-field{
+  padding:3%;
+}
+
+#submit-field{
+  width:65%;
+  margin:0 auto;
+}
+
+#video{
+  max-width:700px;
+  width:80%;
+  height:400px;
+  position:relative;
+  top:25%;
+  left:50%;
+  margin:0 auto;
+  transform: translate(-50%,20%);
+}
+
+#treatz-we-offer{
+  width:50%;
+  margin:0 auto;
+  justify-content:center;
+  flex-wrap:wrap;
+  transform:translate(0%,15%);
+}
+
+.treatz{
+  flex-basis:33.3333333%;
+  margin:2%;
+}
+
+.treatz > img{
+  width:100%;
+  border-radius:3%;
+}
+
+.treatz > p{
+  color:#A2593F;
+  padding:2%;
+}
+
+#about-us, #contact-us, #our-location{
+  margin:0 auto;
+  position:relative;
+  width:50%;
+  color:#A2593F;
+  transform: translate(0,20em);
+  padding:2%;
+}
+
+#our-desc{
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.owner-container{
+  justify-content:space-around;
+}
+
+.owners{
+  border:6px solid #A2593F;
+}
+
+#instagram{
+  width:10%;
+  height:20%; 
+  border-radius:20%;
+}
+
+#youtube{
+  width:15%;
+  height:10%;
+  border-radius:24%;
+}
+
+#map{
+  width: 27em;
+  height: 17em;
+  margin: 0 auto;
+}
+
+@media (max-width:768px){
+  #header{
+  
+  z-index:1;
+}
+
+#nav-bar> ul{
+  background-color:#A2593F;
+  border-radius:3%;
+  color:#F0E68C;
+}
+  
+  #nav-bar> ul> li> a{
+    color:#F0E68C;
+  }
+
+
+
+#header-img{
+  width:3em;
+  z-index:1;
+}
+
+#form{
+  width:80%;
+  padding: 3%;
+  transform: translate(27%,25%);
+}
+
+
+#video{
+  width:47em;
+  height:25em;
+  margin: 20% 25% 20% 24%;
+}
+
+#treatz-we-offer{
+  width:80%;
+  transform:translate(27%,1%);
+}
+
+.treatz{
+  flex-basis:50%;
+  flex-grow:1;
+  margin:2%;
+}
+
+#about-us, #contact-us, #our-location{
+  width:100%;
+  transform: translate(17%,12em);
+}
+
+#our-desc{
+  width: 100%;
+}
+
+.owner-container{
+  flex-direction:column;
+}
+
+.owners{
+  margin-top:2.5em;
+}
+
+#instagram{
+  width:15%;
+  height:25%; 
+}
+
+#youtube{
+  width:20%;
+  height:25%;
+}
+  
+  #map{
+    width:25em;
+  height:15em;
+  margin: 2%;
+  }
+}
+
+@media (max-width:420px){
+  #header{
+  z-index:1;
+}
+
+#nav-bar> ul{
+  background-color:#A2593F;
+  border-radius:3%;
+  color:#F0E68C;
+}
+  
+  #nav-bar> ul> li> a{
+    color:#F0E68C;
+  }
+
+#header-img{
+  width:3em;
+  z-index:1;
+}
+
+#form{
+  width:90%;
+  padding: 3%;
+  transform: translate(25%,25%);
+}
+
+#video{
+  width:27em;
+  height:15em;
+  margin: 20% 15% 20% 25%;
+}
+
+#treatz-we-offer{
+  width:80%;
+  transform:translate(28%,1%);
+}
+
+.treatz{
+  flex-basis:50%;
+  flex-grow:1;
+  margin:2%;
+}
+
+#about-us, #contact-us, #our-location{
+  width:100%;
+  transform: translate(19%,12em);
+}
+
+#our-desc{
+  width: 100%;
+}
+
+.owner-container{
+  flex-direction:column;
+}
+
+.owners{
+  margin-top:2.5em;
+}
+
+#instagram{
+  width:15%;
+  height:25%; 
+}
+
+#youtube{
+  width:20%;
+  height:25%;
+}
+  
+  #map{
+  width:25em;
+  height:15em;
+  margin: 2%;
+  }
+}
+
+@media (max-width:380px){
+  #header{
+  z-index:1;
+}
+
+#nav-bar> ul{
+  background-color:#A2593F;
+  border-radius:3%;
+  color:#F0E68C;
+}
+  
+  #nav-bar> ul> li> a{
+    color:#F0E68C;
+  }
+
+#header-img{
+  width:3em;
+  z-index:1;
+}
+
+#form{
+  width:90%;
+  padding: 3%;
+  transform: translate(26%,25%);
+}
+
+#video{
+  width:27em;
+  height:17em;
+  margin: 20% auto 20% 27%;
+}
+
+#treatz-we-offer{
+  width:80%;
+  transform:translate(30%,1%);
+}
+
+.treatz{
+  flex-basis:50%;
+  flex-grow:1;
+  margin:2%;
+}
+
+#about-us, #contact-us, #our-location{
+  width:100%;
+  transform: translate(20%,12em);
+}
+
+#our-desc{
+  width: 100%;
+}
+
+.owner-container{
+  flex-direction:column;
+}
+
+.owners{
+  margin-top:2.5em;
+}
+
+#instagram{
+  width:15%;
+  height:25%; 
+}
+
+#youtube{
+  width:20%;
+  height:25%;
+}
+  
+  #map{
+    width:25em;
+  height:15em;
+  transform: translateX(-9%);
+  margin: 3%;
+  }
+}
+
+@media (max-width:320px){
+  #header{
+  z-index:1;
+}
+
+#nav-bar> ul{
+  background-color:#A2593F;
+  border-radius:3%;
+  color:#F0E68C;
+}
+  
+  #nav-bar> ul> li> a{
+    color:#F0E68C;
+  }
+
+#header-img{
+  width:3em;
+  z-index:1;
+}
+
+#form{
+  width:90%;
+  padding: 3%;
+  transform: translate(31%,25%);
+}
+
+#video{
+  width:27em;
+  height:15em;
+  margin:0 auto;
+  transform: translate(-28%,60%);
+}
+
+#treatz-we-offer{
+  width:80%;
+  transform:translate(35%,5%);
+}
+
+.treatz{
+  flex-basis:50%;
+  flex-grow:1;
+  margin:2%;
+}
+
+#about-us, #contact-us, #our-location{
+  width:100%;
+  transform: translate(25%,20em);
+}
+
+#our-desc{
+  width: 100%;
+}
+
+.owner-container{
+  flex-direction:column;
+}
+
+.owners{
+  margin-top:2.5em;
+}
+
+#instagram{
+  width:15%;
+  height:25%; 
+}
+
+#youtube{
+  width:20%;
+  height:25%;
+}
+  
+  #map{
+    width:25em;
+  height:15em;
+  margin: 2%;
+  transform: translateX(-11%);
+  }
+}
+    </style>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Chonburi&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chonburi&family=Cinzel+Decorative:wght@700&family=Purple+Purse&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header id="header">
+      <img id="header-img" src="https://delightful-treats.com/wp-content/uploads/2020/10/Asset-2delig.png" alt="Delightfull_Treatz">
+      
+      <nav id="nav-bar">
+        <ul class="center-text flex-container">
+          <li class="font-Chonburi font-type flex-container"> <a class="nav-link animations" href="#treatz-we-offer"> Treatz we Offer </a> </li>
+          <li class="font-Chonburi font-type flex-container"> <a class="nav-link animations" href="#about-us"> About us </a> </li>
+          <li class="font-Chonburi font-type flex-container"> <a class="nav-link animations" href="#contact-us"> Contact us </a> </li>
+          <li class="font-Chonburi font-type flex-container"> <a class="nav-link animations" href="#our-location"> Our Location </a> </li>
+        </ul>
+      </nav>
+    </header>
+    <form id="form" class="font-Chonburi border-styling" action="https://www.freecodecamp.com/email-submit">
+      <p> To get Exclusive Benefits and Discounts join us by filling this form </p>
+      <div id="name-field">
+      <label for="name">Name:</label>
+        <input id="name" class="font-Chonburi border-styling" type="text" placeholder="eg: John Snow">
+      </div>
+      <div id="email-field">
+      <label for="email">Email:</label>
+      <input id="email" name="email" class="font-Chonburi border-styling" type="email" placeholder="name@example.com">
+      </div>
+      <div id="submit-field">
+        <input id="submit" class="font-Chonburi border-styling animations" type="submit" value="Join Us">
+      </div>
+    </form>
+      <iframe id="video" class="border-styling" src="https://www.youtube.com/embed/fMnjrn1CjVc" allowfullscreen></iframe>
+    
+    <section id="treatz-we-offer" class="flex-container">
+     <div class="treatz border-styling image-animations"> <img src="https://i.pinimg.com/736x/aa/7c/86/aa7c86c348c2a45dd081a3bf47e9352a.jpg" alt="Cake made by DelightFull Treatz">
+       <p class="font-Chonburi center-text"> Cake 1 </p>
+     </div>
+      <div class="treatz border-styling image-animations"> <img src="https://i.pinimg.com/736x/aa/7c/86/aa7c86c348c2a45dd081a3bf47e9352a.jpg" alt="Cake made by DelightFull Treatz">
+        <p class="font-Chonburi center-text"> Cake 2 </p>
+      </div>
+      <div class="treatz border-styling image-animations"> <img src="https://i.pinimg.com/736x/aa/7c/86/aa7c86c348c2a45dd081a3bf47e9352a.jpg" alt="Cake made by DelightFull Treatz">
+        <p class="font-Chonburi center-text"> Cake 3 </p>
+      </div>
+      <div class="treatz border-styling image-animations"> <img src="https://i.pinimg.com/736x/aa/7c/86/aa7c86c348c2a45dd081a3bf47e9352a.jpg" alt="Cake made by DelightFull Treatz">
+       <p class="font-Chonburi center-text"> Cake 4 </p>
+     </div>
+      <div class="treatz border-styling image-animations"> <img src="https://i.pinimg.com/736x/aa/7c/86/aa7c86c348c2a45dd081a3bf47e9352a.jpg" alt="Cake made by DelightFull Treatz">
+        <p class="font-Chonburi center-text"> Cake 5 </p>
+      </div>
+      <div class="treatz border-styling image-animations"> <img src="https://i.pinimg.com/736x/aa/7c/86/aa7c86c348c2a45dd081a3bf47e9352a.jpg" alt="Cake made by DelightFull Treatz">
+        <p class="font-Chonburi center-text"> Cake 6 </p>
+      </div>
+      <div class="treatz border-styling image-animations"> <img src="https://i.pinimg.com/736x/aa/7c/86/aa7c86c348c2a45dd081a3bf47e9352a.jpg" alt="Cake made by DelightFull Treatz">
+        <p class="font-Chonburi center-text"> Cake 7 </p>
+      </div>
+      <div class="treatz border-styling image-animations"> <img src="https://i.pinimg.com/736x/aa/7c/86/aa7c86c348c2a45dd081a3bf47e9352a.jpg" alt="Cake made by DelightFull Treatz">
+        <p class="font-Chonburi center-text"> Cake 8 </p>
+      </div>
+    </section>
+
+      <section id="about-us" class="font-Chonburi center-text">
+      <div>
+        <h2> About Us </h2>
+        <article id="our-desc">
+          <p>We are a sweets and pastry maker based in the city of Vasco Da Gama in Goa which offer a wide range of Cakes, Sweet Dishes, Pastries and many more Delicious Treatz.</p>
+        </article>
+        </div>
+        <div class="owner-container flex-container">
+          <div>
+          <img class="owners border-styling image-animations" src="data:image/png;base64,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" alt="Samiksha Mardolkar">
+        <p>
+          Samiksha Mardolkar
+        </p>
+        <p>Owner of Delightful Treatz</p>
+          </div>
+          <div>
+        <img class="owners border-styling image-animations" src="data:image/png;base64,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" alt="Sulaksha Mardolkar">
+        <p>
+          Sulaksha Mardolkar
+        </p>
+        <p>Co-Owner of Delightful Treatz</p>
+          </div>
+      </div>  
+      </section>
+    
+
+      <section id="contact-us" class="font-Chonburi center-text">
+        <h2>Contact Us</h2>
+        <ul class="flex-container">
+          <li class="font-type"><a class="nav-link animations" href="tel:+914378914321"> Call Samiksha</a></li>
+          <li class="font-type"><a class="nav-link animations" href="tel:+912345432543">Call Sulaksha</a></li>
+        </ul>
+        <h3>Follow us on</h3> <div><a href="https://instagram.com/delightfull_treatz?utm_medium=copy_link" target="_blank"><img id="instagram" class="image-animations" src="https://facebookbrand.com/wp-content/uploads/2021/03/Instagram_AppIcon_Aug2017.png?w=300&h=300" alt="Instagram"></a></div>
+        
+        <h3>Subscribe to our channel on</h3><div><a href="https://www.youtube.com/channel/UC1c_2ZJrbHTxCTXM4uGQJYQ" target="_blank"><img id="youtube" class="image-animations" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/1280px-YouTube_full-color_icon_%282017%29.svg.png" alt="Youtube"></a></div>
+      </section>
+
+      <section id="our-location" class="font-Chonburi center-text">
+        <h2>Find us here</h2>
+        <iframe id="map" class="border-styling" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3846.7096799199726!2d73.81488431484988!3d15.392201589302285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbfc7bfc7292851%3A0xf8bbd70f16095824!2sMormugao%20Communidade%20Hall!5e0!3m2!1sen!2sin!4v1621580192263!5m2!1sen!2sin" width="600" height="450" allowfullscreen="" loading="lazy"></iframe>
+      </section>
+  </body>
+</html>
